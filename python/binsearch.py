@@ -1,13 +1,11 @@
-# 이분검색 알고리즘
 def binsearch(S, x):
     low, high = 0, len(S)-1
     location = -1
 
-    # while 반복문 실행횟수 확인용
     loop_count = 0
     while low <= high and location == -1:
         loop_count += 1
-        mid = (low + high)
+        mid = (low + high)//2
 
         if x == S[mid]:
             location = mid
