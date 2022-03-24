@@ -8,12 +8,12 @@ public class MergeSort3 {
     public static void main(String[] args) {
         int[] array = {8,2,6,4,7,3,9,5};
         
-        System.out.println("<정렬 전>");
-        System.out.println(Arrays.toString(array));
+        //System.out.println("<정렬 전>");
+        //System.out.println(Arrays.toString(array));
         mergeSort(array);
         
-        System.out.println("<정렬 후>");
-        System.out.println(Arrays.toString(array));
+        //System.out.println("<정렬 후>");
+        //System.out.println(Arrays.toString(array));
     }
 
 
@@ -29,21 +29,14 @@ public class MergeSort3 {
             return;
         }
 
-        System.out.println("MERGESORT ARRAY : " + Arrays.toString(array));
-
         // 중간 위치
-        System.out.println("MERGESORT LEFT : " + left);
-        System.out.println("MERGESORT RIGHT : " + right);
         int mid = (left+right)/2;
-
-        System.out.println("MERGESORT MID : " + mid);
+        System.out.println("left : " + left + " / right : " + right + " / mid : " + mid);
         
         // 절반 중 왼쪽 부분 리스트
-        System.out.println("LEFT");
         mergeSort(array,left,mid);
 
         // 절반 중 오른쪽 부분 리스트
-        System.out.println("RIGHT");
         mergeSort(array,mid+1,right);
 
         // 병합작업
@@ -60,6 +53,8 @@ public class MergeSort3 {
      * @param right
      */
     private static void merge(int[] array,int left,int mid,int right) {
+        System.out.println(Arrays.toString(array) + " left : " + left + " mid : " + mid + " right : " + right);
+
         // 왼쪽 부분리스트 시작점
         int l = left;
 
@@ -68,13 +63,6 @@ public class MergeSort3 {
 
         // 채워넣을 배열의 인덱스
         int idx = left;
-
-        System.out.println("MERGE L = " + l);
-        System.out.println("MERGE R = " + r);
-        System.out.println("MERGE IDX = " + idx);
-        System.out.println("MERGE RIGHT = " + right);
-
-
 
         while (l <= mid && r <= right) {
             /**
