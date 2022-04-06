@@ -1,11 +1,11 @@
 import java.util.Arrays;
 
 public class BubbleSort {
-    public static void BubbleSort(int[] array) {
-        BubbleSort(array,array.length);
+    public static void bubbleSort(int[] array) {
+        bubbleSort(array,array.length);
     }
 
-    public static void BubbleSort(int[] array, int size) {
+    public static void bubbleSort(int[] array, int size) {
         for (int i=1;i<size;i++) {
             for (int j=0;j<size-1-i;j++) {
                 if (array[j] > array[j+1]) {
@@ -24,7 +24,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int[] array = {9,5,3,7,8,1,4};
-        BubbleSort(array);
+        bubbleSort(array);
         System.out.println(Arrays.toString(array));
     } 
 }

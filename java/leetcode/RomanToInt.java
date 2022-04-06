@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class RomanToInt {
     public int solution(String s) {
-        Map<Character,Integer> map = new HashMap();
+        Map<Character,Integer> map = new HashMap<>();
         map.put('I',1);
         map.put('V',5);
         map.put('X',10);

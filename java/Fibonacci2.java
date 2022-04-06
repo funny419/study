@@ -10,6 +10,7 @@ public class Fibonacci2 {
         for (int i=0;i<=num;i++) {
             System.out.printf("%d\t",fiboFunction(i));
         }
+        scanner.close();
     }
 
 

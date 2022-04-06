@@ -14,7 +14,7 @@ public class GenericClass3<E> {
     }
 }
 
-class Main {
+class Process {
     public static void main(String[] args) {
         GenericClass3<String> a = new GenericClass3<String>();
         GenericClass3<Integer> b = new GenericClass3<Integer>();

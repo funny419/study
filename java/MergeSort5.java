@@ -26,7 +26,7 @@ public class MergeSort5 {
     }
 
     private <T> List<T> merge(List<T> leftHalf,List<T> rightHalf) {
-        List<T> result = new ArrayList();
+        List<T> result = new ArrayList<>();
         while (leftHalf.size() > 0 || rightHalf.size() > 0) {
             if (leftHalf.size() > 0 && rightHalf.size() > 0) {
                 boolean diff = false;

@@ -3,11 +3,11 @@ import java.util.Arrays;
 public class InsertionSort7 {
     public static void main(String[] args) {
         int[] a = {1,10,5,7,22,3,0};
-        InsertionSort7(a);
+        insertionSort(a);
         System.out.println(Arrays.toString(a));
     }
 
-    public static void InsertionSort7(int[] array) {
+    public static void insertionSort(int[] array) {
         int i,temp;
         int j = 0;
         for (i=1;i<array.length;i++) {

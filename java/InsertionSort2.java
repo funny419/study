@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class InsertionSort2 {
     public static void main(String[] args) {
         int[] array = {10,20,6,4,3,7,5};

@@ -8,7 +8,7 @@ public class MergeSort4 {
         mergeSortDevide(array,0,array.length-1,"FIRST");
 
         // merge된 최종 배열 출력
-        //outPutMergeArray(array);
+        outPutMergeArray(array);
     }
 
 
