@@ -17,7 +17,7 @@ public class GenericClass2<K,V> {
     }
 }
 
-class Process {
+class Process2 {
     public static void main(String[] args) {
         GenericClass2<String,Integer> a = new GenericClass2<String,Integer>();
         a.set("10",10);

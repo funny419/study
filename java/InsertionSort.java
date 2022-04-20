@@ -8,7 +8,7 @@ public class InsertionSort {
             int target = array[i];
             int j = i - 1; // 이전 정보
 
-            while (j >= 0 && target < array[j]) {
+            while (target < array[j]) {
                 array[j+1] = array[j];
             }
 

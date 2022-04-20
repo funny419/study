@@ -14,7 +14,7 @@ public class GenericClass3<E> {
     }
 }
 
-class Process {
+class Process3 {
     public static void main(String[] args) {
         GenericClass3<String> a = new GenericClass3<String>();
         GenericClass3<Integer> b = new GenericClass3<Integer>();
@@ -27,7 +27,7 @@ class Process {
 
         System.out.println("b data : " + b.get());
 		System.out.println("b E Type : " + b.get().getClass().getName());
-		
+
 		System.out.println("<T> returnType : " + a.genericMethod(3).getClass().getName());
 		System.out.println("<T> returnType : " + a.genericMethod("ABCD").getClass().getName());
 		System.out.println("<T> returnType : " + a.genericMethod(b).getClass().getName());
